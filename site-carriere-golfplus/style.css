@@ -510,12 +510,40 @@ section.chiffres-cles {
     object-fit: cover;
   }
 
-  /* Nos valeurs  */
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    background: #111;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+  }
+  
 
 
   /* Responsive  */
-
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
   @media screen and (max-width: 992px) {
+    .hero .container h1 {
+      font-size: 2rem;
+    }
+    .punchline {
+      font-size: 1.5rem;
+    }
+    .bigger-punchline {
+      font-size: 1.5rem;
+    }
     .container {
       max-width: 88vw;
       margin: 0 auto;
@@ -540,5 +568,22 @@ section.chiffres-cles {
 .processus-recrutement, .votre-carriere {
   background-color: var(--light-gray);
   overflow-x: hidden;
+}
+.offre,.metier {
+  width: 100%;
+}
+.fact-item {
+  width: 45%;
+}
+.slide {
+  flex-direction: column;
+}
+.quote-container {
+  padding: 0;
+  width: 100%;
+}
+.quote {
+  font-style: italic;
+  font-size: .9rem;
 }
   }
